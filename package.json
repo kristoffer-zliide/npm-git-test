@@ -1,20 +1,14 @@
 {
   "name": "npm-git-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "module",
+  "private": true,
+  "switch-between-these": {
+    "version 1 in github": "git+ssh://git@github.com/kristoffer-zliide/npm-git-dep-test.git#9e32a70222842ce2033fb876d4af8182f369f22b",
+    "version 2 in github": "git+ssh://git@github.com/kristoffer-zliide/npm-git-dep-test.git#42146c03ce8b0d80de39d099baee5a2f1c979f89",
+    "version 1 on custom domain": "git+ssh://git@git.zliide.com/kristoffer_zliide/npm-git-dep-test.git#9e32a70222842ce2033fb876d4af8182f369f22b",
+    "version 2 on custom domain": "git+ssh://git@git.zliide.com/kristoffer_zliide/npm-git-dep-test.git#42146c03ce8b0d80de39d099baee5a2f1c979f89"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kristoffer-zliide/npm-git-test.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kristoffer-zliide/npm-git-test/issues"
-  },
-  "homepage": "https://github.com/kristoffer-zliide/npm-git-test#readme"
+  "dependencies": {
+    "npm-git-dep-test": "github:kristoffer-zliide/npm-git-dep-test#9e32a70222842ce2033fb876d4af8182f369f22b"
+  }
 }
